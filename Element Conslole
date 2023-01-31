@@ -1,0 +1,1 @@
+javascript:(function() {    var cmd = prompt("Enter command to run in console:");    if (cmd) {        var s = document.createElement("script");        s.textContent = "console.log('Running command:', `" + cmd + "`);" + cmd + ";";        (document.head || document.documentElement).appendChild(s);        s.remove();    }})();
